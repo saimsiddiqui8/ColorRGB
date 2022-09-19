@@ -1,0 +1,19 @@
+.screen {
+    width: 80% !important;
+    height: 10rem  !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#slidecontainer{
+    display: inline-flex;
+}
+.ms-5{
+    margin-left: 4rem !important;
+}
+p{
+    display: flex;
+    justify-content: space-around;
+}

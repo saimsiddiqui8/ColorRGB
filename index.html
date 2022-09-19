@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="rows justify-content-evenly">
+        <div  class="screen mt-5 ms-5 col-lg-10 col-md-10 col-sm-10"></div>
+        </div>
+        <div class="rows justify-content-evenly">
+    <!-- 1 -->
+        <div id="slidecontainer" onpointerenter="go()" class="slidecontainer col-lg-3 col-md-3 col-sm-3 mt-5 ms-5">
+    <input type="range" min="0" max="225" value="100" id="myRange"  onclick ="changeColor()">
+    <p>Red</p>
+    </div>
+
+
+    <!-- 2 -->
+    <div id="slidecontainer" onpointerenter="goOne()" class="slidecontainer col-lg-3 col-md-3 col-sm-3 mt-5 ms-5">
+    <input type="range" min="0" max="225" value="" id="myRange1" onclick ="changeColor()"  >
+    <p>Green</p>
+    </div>
+
+
+    <!-- 3 -->
+    <div id="slidecontainer" onpointerenter="goTwo()" class="slidecontainer col-lg-3 col-md-3 col-sm-3 mt-5 ms-5">
+    <input type="range" min="0" max="225" value="" id="myRange2" onclick ="changeColor()">
+    <p> Blue</p>
+    </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
